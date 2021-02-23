@@ -1,0 +1,152 @@
+:root{
+    
+--Strong-Cyan: hsl(171, 66%, 44%);
+--Light-Blue: hsl(233, 100%, 69%);
+--Dark-Grayish-Blue: hsl(210, 10%, 33%);
+--Grayish-Blue: hsl(201, 11%, 66%);
+
+--font_400: 400;
+--font_600: 600;
+}
+
+*, *::after, *::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+         font-size: 1.8rem;
+         font-family: 'Bai Jamjuree', sans-serif;
+}
+
+.flex{
+    display: flex;
+}
+
+.flex__direction{
+    flex-direction: column;
+}
+
+.flex__align{
+      align-items: center;
+}
+
+.flex__justify{
+    justify-content: center;
+}
+
+.padd__ver{
+    padding-left: 4rem;
+    padding-right: 4rem;
+}
+
+.hero{
+            background: url('images/bg-header-desktop.png') white;
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: top;
+            padding-top: 9rem;
+            padding-bottom: 9rem;
+}
+
+.img__wrapper{
+    margin: 3.25rem 0rem;
+}
+
+.hero__text{
+    max-width: 68rem;
+    margin: 3.25rem 0rem;
+    text-align: center;
+} 
+
+.hero__text h1{
+    /* font-size: 4.3rem; */
+    font-size: clamp(3rem, 3.5vw, 4.3rem );
+    margin-bottom: 2rem;
+}
+
+.heading{
+    color: var(--Dark-Grayish-Blue);
+}
+
+.desc{
+    color: var(--Grayish-Blue);
+    font-size: 1.6rem;
+    line-height: 1.5;
+}
+
+
+.hero__buttons{
+    text-align: center;
+}
+
+.btn{
+    border: none;
+    font-family: 'Bai Jamjuree', sans-serif;
+    /* font-size: 1.8rem; */
+    font-size: clamp(1.6rem, 1.5vw, 1.8rem);
+    color: white;
+    cursor: pointer;
+    padding: 1.5rem 4rem;
+    border-radius: 10rem;
+    box-shadow: 0rem 0.5rem 1rem rgba(0, 0, 0, 0.25);
+    transition: opacity 0.3s ease-in-out;
+}
+
+.btn:hover{
+    opacity: 0.8;
+}
+
+.btn__ios{
+    background-color: var(--Strong-Cyan);
+    margin: 1rem;
+}
+
+.btn__mac{
+        background-color: var(--Light-Blue);
+        margin: 1rem;
+}
+  
+  @media screen and (max-width: 1200px) {
+    body{
+        background-color: gray;
+    }
+  }
+ 
+   @media screen and (max-width: 1024px) {
+       body{
+           background-color: goldenrod;
+       }
+     }
+     
+   @media screen and (max-width: 768px) {
+       body{
+           background-color: tomato;
+       }
+       }
+
+   @media screen and (max-width: 550px) {
+        .hero{
+            background: url('images/bg-header-mobile.png') white;
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: top;
+        }
+        .padd__ver{
+            padding-left: 2rem;
+            padding-right: 2rem;
+        }
+      }
+
+   @media screen and (max-width: 480px) {
+        body{
+            background-color: blueviolet;
+        }
+     }
+    
+    
