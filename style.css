@@ -45,6 +45,27 @@ body{
     padding-right: 4rem;
 }
 
+.inner__container{
+    max-width: 144rem;
+    margin: 0 auto;
+}
+
+.head__text{
+    max-width: 68rem;
+    text-align: center;
+}
+
+.head__small{
+    font-size: clamp(2.5rem, 2.5vw, 3.5rem );
+}
+
+.desc__small{
+    font-size: 1.4rem  !important;
+}
+
+
+/* === start of hero === */
+
 .hero{
             background: url('images/bg-header-desktop.png') white;
             background-repeat: no-repeat;
@@ -59,19 +80,17 @@ body{
 }
 
 .hero__text{
-    max-width: 68rem;
     margin: 3.25rem 0rem;
-    text-align: center;
 } 
 
 .hero__text h1{
     /* font-size: 4.3rem; */
     font-size: clamp(3rem, 3.5vw, 4.3rem );
-    margin-bottom: 2rem;
 }
 
 .heading{
     color: var(--Dark-Grayish-Blue);
+    margin-bottom: 2rem;
 }
 
 .desc{
@@ -111,6 +130,54 @@ body{
         background-color: var(--Light-Blue);
         margin: 1rem;
 }
+
+/* === end of of hero === */
+
+
+/* === start of of features === */
+
+.feature-1{
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+    background-color: white;
+}
+
+.feature-1__body{
+    width: 100%;
+    margin-top: 8rem;
+    overflow-x: hidden;
+}
+
+.feature-1__img__wrapper{
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.feature-1__img__wrapper img{
+    display: block;
+}
+
+.feature-1__detail{
+    width: 50%;
+    padding-left: 10rem;
+}
+
+.feature-1__detail ul{
+       max-width: 34.5rem;
+       list-style-type: none;
+}
+
+.feature-1__detail li:not(:last-child){
+    margin-bottom: 6.5rem;
+}
+
+.feature-1__detail li h3{
+    margin-bottom: 1rem;
+}
+
+/* === end of of features === */
+
   
   @media screen and (max-width: 1200px) {
     body{
@@ -125,9 +192,28 @@ body{
      }
      
    @media screen and (max-width: 768px) {
-       body{
-           background-color: tomato;
-       }
+           .feature-1__body{
+               flex-direction: column;
+           }
+
+           .feature-1__img__wrapper img{
+              max-width: 100%;
+           }
+
+           .feature-1__img__wrapper, .feature-1__detail{
+               width: 100%;
+           }
+          
+             .feature-1__detail{
+                 margin-top: 6.5rem;
+                 padding-left: 0;
+             }
+
+           .feature-1__detail ul{
+               max-width: 100%;
+               text-align: center;
+           }
+
        }
 
    @media screen and (max-width: 550px) {
