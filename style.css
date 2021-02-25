@@ -101,7 +101,7 @@ body{
 }
 
 
-.hero__buttons{
+.cta__buttons{
     text-align: center;
 }
 
@@ -223,15 +223,26 @@ body{
        justify-content: space-between;
    }
    .clients__content img{
-       /* flex: 1; */
        padding: 3rem 2rem;
        max-width: 100%;
        object-fit: cover;
-       /* width: 15rem; */
    }
 /* === end of of clients === */
 
   
+/* === start of of cta === */
+
+ .cta{
+     padding-top: 6rem;
+     padding-bottom: 6rem;
+ }
+
+ .bot__cta{
+     margin-top: 4rem;
+ }
+/* === end of of cta === */
+
+
   @media screen and (max-width: 1200px) {
     .clients__content{
         width: 100%;
