@@ -136,7 +136,7 @@ body{
 
 /* === start of of features === */
 
-.feature-1{
+.feature{
     padding-top: 6rem;
     padding-bottom: 6rem;
     background-color: white;
@@ -175,6 +175,17 @@ body{
 .feature-1__detail li h3{
     margin-bottom: 1rem;
 }
+
+.feature-2__img__wrapper{
+    margin-top: 7rem;
+}
+
+.feature-2__img__wrapper img{
+    display: block;
+    max-width: 100%;
+    object-fit: cover;
+}
+
 
 /* === end of of features === */
 
